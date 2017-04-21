@@ -18,20 +18,20 @@ There is small posibility of having same numbers in one list i.e [1,2,2,4,5,7] b
 
 
 import random
-
+N = 6
 def randcurrent():
-    current = [None] * 6
+    current = [None] * N
     x = 0
-    while x < 6:
+    while x < N:
         current[x] = random.randint(1, 49)
         x += 1
     current.sort()
     return current
 
 def randiter():
-    iter = [None]*6
+    iter = [None]*N
     i = 0
-    while i<6:
+    while i<N:
         iter[i] = random.randint(1,49)
         i+=1
     iter.sort()
